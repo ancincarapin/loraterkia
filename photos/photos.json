@@ -2,8 +2,16 @@
   {
     "file": "placeholder.svg",
     "title": "Bienvenido a tu galería",
-    "alt": "Marcador de posición que indica subir fotos a la carpeta photos y editar photos.json",
-    { "file": "IMG20250815210059.jpg", "title": "Wet sky", "alt": "Last view of the day" },
-    { "file": "IMG20250803131654.jpg", "title": "Esperando a ser liberada", "alt": "Esperando a que? Ya no vendran..." }
+    "alt": "Marcador de posición que indica subir fotos a la carpeta photos y editar photos.json"
+  },
+  {
+    "file": "IMG20250815210059.jpg",
+    "title": "Wet sky",
+    "alt": "Last view of the day"
+  },
+  {
+    "file": "IMG20250803131654.jpg",
+    "title": "Esperando a ser liberada",
+    "alt": "Esperando a que? Ya no vendran..."
   }
 ]
