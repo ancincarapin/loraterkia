@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Galería minimalista</title>
+  <meta name="description" content="Galería de fotos minimalista en GitHub Pages" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Mi galería</h1>
+    <nav class="site-nav">
+      <a href="./" aria-current="page">Inicio</a>
+      <a href="https://github.com/" target="_blank" rel="noopener">Código</a>
+    </nav>
+  </header>
+
+  <main id="app" class="container" aria-live="polite">
+    <section class="intro">
+      <p>Sube tus imágenes al directorio <code>/photos</code> del repositorio y añádelas al archivo <code>photos/photos.json</code>. Esta página las mostrará automáticamente.</p>
+    </section>
+
+    <section id="gallery" class="gallery" aria-label="Galería de fotografías"></section>
+
+    <template id="card-template">
+      <figure class="card">
+        <button class="thumb" type="button" aria-haspopup="dialog">
+          <img loading="lazy" decoding="async" alt="" />
+        </button>
+        <figcaption class="caption"></figcaption>
+      </figure>
+    </template>
+  </main>
+
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Visor de imagen">
+    <button class="close" aria-label="Cerrar (Esc)">&times;</button>
+    <button class="prev" aria-label="Anterior">&#10094;</button>
+    <img id="lightbox-img" alt="" />
+    <button class="next" aria-label="Siguiente">&#10095;</button>
+    <p id="lightbox-cap" class="lightbox-cap"></p>
+  </div>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> · Hecho con GitHub Pages</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
